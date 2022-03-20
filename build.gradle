@@ -1,0 +1,41 @@
+plugins {
+    id 'java'
+}
+
+group 'MyfirstProject.generated'
+version '1.0'
+
+test {
+    useJUnitPlatform()
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        url "https://oss.sonatype.org/content/repositories/snapshots/"
+    }
+}
+
+jar {
+    // Include compiled test classes and their sources
+    from sourceSets.test.output+sourceSets.test.allSource
+
+    // Collect and zip all classes from both test and runtime configurations
+    from { configurations.testRuntimeClasspath.collect { it.isDirectory() ? it : zipTree(it) } }
+}
+
+compileTestJava.options.compilerArgs.add '-parameters'
+
+dependencies {
+    // Use JUnit Jupiter API for testing.
+    testImplementation  'org.junit.jupiter:junit-jupiter-api:5.6.0'
+
+    // Module "junit-jupiter-params" of JUnit 5.
+    testImplementation   group: 'org.junit.jupiter', name: 'junit-jupiter-params', version: '5.6.0'
+
+    // Use JUnit Jupiter Engine for testing.
+    testImplementation   'org.junit.jupiter:junit-jupiter-engine:5.6.0'
+
+    implementation 'io.testproject:java-sdk:1.1.0-RELEASE'
+
+}
