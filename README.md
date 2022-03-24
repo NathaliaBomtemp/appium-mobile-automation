@@ -9,7 +9,7 @@ This project it`s a model of a frontend mobile test automation - Android, develo
 
 More details of the project description - in progress :hammer_and_wrench:
 
-## :mortar_board: Autora
+## Author
 <table align="center">
     <tr>
         <td align="center">
