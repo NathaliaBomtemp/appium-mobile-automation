@@ -7,7 +7,7 @@
 
 This project it`s a model of a frontend mobile test automation - Android, developed with **Java and Appium**;
 
-More details of the project description - in progress :hammer_and_wrench:
+More details of the project description - **in progress** :hammer_and_wrench:
 
 ## Author
 <table align="center">
