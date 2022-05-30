@@ -5,7 +5,7 @@
 <img src="https://img.shields.io/badge/Appium-7d4ea6?style=for-the-badge" target="_blank"></a>
 <img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" target="_blank"></a>
 
-This project it`s a model of a frontend mobile test automation - Android, developed with **Java and Appium**;
+This project it`s a model of a frontend mobile test automation (OS - Android), developed with **Java and Appium**;
 
 More details of the project description - **in progress** :hammer_and_wrench:
 
